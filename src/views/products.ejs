@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar producto</title>
+</head>
+<body>
+
+    <h1>Cargar un producto</h1>
+
+    <form action="/cargar-producto-backend" method="POST">
+
+        <label for="product_name">Nombre del producto</label>
+        <input type="text" name="product_name" id="product_name">
+        
+        <label for="product_description">descripcion corta</label>
+        <input type="text" name="product_description" id="product_description">
+        
+        <label for="product_name">descripcion Completa</label>
+        <textarea name="product_long_desciption" id="" cols="30" rows="10"></textarea>
+    
+        <label for="product_price">Precio del producto</label>
+        <input type="number" name="product_price" id="product_price">
+
+        <button type="submit">Cargar producto</button>
+    </form>
+    
+</body>
+</html>
