@@ -1,4 +1,4 @@
-
+const { validationResult} = require("express-validator");
 
 const renderUploadProductView = (req, res) => {
 
@@ -10,6 +10,11 @@ const renderUploadProductView = (req, res) => {
 
 
 const renderSuccessProductCreate = (req, res)=>{
+    const errors = validationResult(req);
+    // // if (!errors.isEmpty()){
+        // const parsedErrors = errors.array().map(el => el.msg)
+
+    // }
 
     const {product_name, product_description , product_price } = req.body;
 
